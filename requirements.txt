@@ -138,7 +138,6 @@ pythreejs==2.4.1
 pytz==2021.3
 pytz-deprecation-shim==0.1.0.post0
 pyvista==0.37.0
-pyviz-comms==2.2.1
 pywin32==301
 pywinpty==1.1.5
 PyYAML==6.0
@@ -157,7 +156,6 @@ shapely==2.0.1
 six==1.16.0
 slippy==0.3.1
 smmap==5.0.0
-spyder-kernels==2.1.2
 statsmodels==0.13.5
 streamlit==1.23.1
 streamlit-folium==0.13.0
