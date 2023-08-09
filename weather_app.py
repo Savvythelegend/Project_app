@@ -167,7 +167,7 @@ with st.spinner('Loading...'):
         yanchor="bottom",
         y=1.02,
         xanchor="right",
-        x=0.7
+        x=0.1
     ))
     
     # center on Liberty Bell, add marker
