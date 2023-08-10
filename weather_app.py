@@ -65,8 +65,10 @@ temp = current["temperature"]
 speed = current["windspeed"]
 direction = current["winddirection"]
 
+# Increment added or substracted from degree values for wind direction
 ddeg = 11.25
 
+# Determine wind direction based on received degrees
 if direction >= (360-ddeg) and direction < (0+ddeg):
     common_dir = "N"
 elif direction >= (337.5-ddeg) and direction < (337.5+ddeg):
@@ -101,7 +103,7 @@ elif direction >= (22.5-ddeg) and direction < (22.5+ddeg):
     common_dir = "N/NE"
 
 
-st.info(f"The current temperature is {temp} °C. \n The wind speed is {speed} m/s. \n The wind direction is {common_dir}.")
+st.info(f"The current temperature is {temp} °C. \n The wind speed is {speed} m/s. \n The wind is coming from {common_dir}.")
 
 st.subheader("Week ahead")
 
