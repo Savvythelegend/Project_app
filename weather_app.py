@@ -23,7 +23,7 @@ import requests
 import json
 from plotly.subplots import make_subplots
 import plotly.graph_objs as go
-from datetime import datetime, timedelta
+from datetime import datetime
 from datetime import timezone as tmz
 import pytz
 from tzwhere import tzwhere
@@ -146,7 +146,7 @@ with st.spinner('Loading...'):
     time_now = datetime.now(tmz.utc)+tzoffset
     
     fig.add_vline(x = time_now, line_color="red", opacity=0.4)
-    fig.add_annotation(x = time_now+timedelta(days=0,hours=13,minutes=0), y=max(hourly_df['Temperature °C'])+5,
+    fig.add_annotation(x = time_now, y=max(hourly_df['Temperature °C'])+5,
                 text = time_now.strftime("%d %b %y, %H:%M"),
                 showarrow=False,
                 yshift=0)
