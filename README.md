@@ -1,4 +1,4 @@
-# streamlit-weather-app
+# Streamlit Weather Webapp
 
 This is a basic Streamlit webapp displaying the current temperature, wind speed
 and wind direction as well as the temperature and precipitation forecast for 
