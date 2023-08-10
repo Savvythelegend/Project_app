@@ -65,8 +65,9 @@ temp = current["temperature"]
 speed = current["windspeed"]
 direction = current["winddirection"]
 
+ddeg = 11.25
 
-if direction >= 350 and direction < 10:
+if direction >= (360-ddeg) and direction < (0+ddeg):
     common_dir = "N"
 elif direction >= 330 and direction < 350:
     common_dir = "N/NW"
