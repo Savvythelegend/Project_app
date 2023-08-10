@@ -147,7 +147,7 @@ with st.spinner('Loading...'):
     
     fig.add_vline(x = time_now, line_color="red", opacity=0.4)
     fig.add_annotation(x = time_now+timedelta(days=0,hours=13,minutes=0), y=max(hourly_df['Temperature °C'])+5,
-                text = time_now.strftime("%d %b %y, %H:%M")',
+                text = time_now.strftime("%d %b %y, %H:%M"),
                 showarrow=False,
                 yshift=0)
     
