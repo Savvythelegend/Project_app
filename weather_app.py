@@ -69,7 +69,7 @@ direction = current["winddirection"]
 ddeg = 11.25
 
 # Determine wind direction based on received degrees
-if direction >= (360-ddeg) and direction < (0+ddeg):
+if direction >= (360-ddeg) or direction < (0+ddeg):
     common_dir = "N"
 elif direction >= (337.5-ddeg) and direction < (337.5+ddeg):
     common_dir = "N/NW"
