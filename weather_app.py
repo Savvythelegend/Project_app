@@ -145,7 +145,7 @@ with st.spinner('Loading...'):
     
     time_now = datetime.now(tmz.utc)+tzoffset
     
-    fig.add_vline(x = time_now, line_color="red", opacity=0.2)
+    fig.add_vline(x = time_now, line_color="red", opacity=0.4)
     fig.add_annotation(x = time_now, y=max(hourly_df['Temperature °C'])+5,
                 text = time_now.strftime("%d %B %y, %H:%M"),
                 showarrow=False,
