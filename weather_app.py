@@ -42,13 +42,13 @@ data = pd.read_csv(file)
 
 # Select Country
 country_set = set(data.loc[:,"country"])
-country = st.selectbox('Select a country', options=country_set)
+country = st.selectbox('Select a country', options=country_set, index = 'Germany')
 
 country_data = data.loc[data.loc[:,"country"] == country,:]
 
 city_set = country_data.loc[:,"city_ascii"] 
 
-city = st.selectbox('Select a city', options=city_set)
+city = st.selectbox('Select a city', options=city_set, index = 'Stuttgart')
 
 
 lat = float(country_data.loc[data.loc[:,"city_ascii"] == city, "lat"])
