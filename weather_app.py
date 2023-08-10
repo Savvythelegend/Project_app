@@ -145,11 +145,12 @@ with st.spinner('Loading...'):
     
     time_now = datetime.now(tmz.utc)+tzoffset
     
-    fig.add_vline(x = time_now, line_color="red", opacity=0.4, ha='left')
+    fig.add_vline(x = time_now, line_color="red", opacity=0.4)
     fig.add_annotation(x = time_now+timedelta(days=0,hours=15,minutes=0), y=max(hourly_df['Temperature °C'])+5,
                 text = time_now.strftime("%d %B %y, %H:%M"),
                 showarrow=False,
-                yshift=0)
+                yshift=0,
+                ha='left')
     
     fig.update_yaxes(range=[min(hourly_df['Temperature °C'])-10,
                             max(hourly_df['Temperature °C'])+10],
