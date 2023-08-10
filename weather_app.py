@@ -42,7 +42,7 @@ data = pd.read_csv(file)
 
 # Select Country
 country_set = set(data.loc[:,"country"])
-country = st.selectbox('Select a country', options=country_set, index = 'Germany')
+country = st.selectbox('Select a country', options=country_set, index = country_set=='Germany')
 
 country_data = data.loc[data.loc[:,"country"] == country,:]
 
