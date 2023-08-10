@@ -149,8 +149,7 @@ with st.spinner('Loading...'):
     fig.add_annotation(x = time_now+timedelta(days=0,hours=15,minutes=0), y=max(hourly_df['Temperature °C'])+5,
                 text = time_now.strftime("%d %B %y, %H:%M"),
                 showarrow=False,
-                yshift=0,
-                ha='left')
+                yshift=0)
     
     fig.update_yaxes(range=[min(hourly_df['Temperature °C'])-10,
                             max(hourly_df['Temperature °C'])+10],
