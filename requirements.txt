@@ -108,7 +108,6 @@ param==1.12.3
 parso==0.8.2
 patsy==0.5.3
 pickleshare==0.7.5
-Pillow==8.3.2
 pipp==0.0.1
 plotly==5.3.1
 plotly-express==0.4.1
